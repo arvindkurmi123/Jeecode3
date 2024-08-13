@@ -1,0 +1,94 @@
+/* QuestionCard.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+.question-card {
+  background-color: white;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  padding-bottom: 10px;
+  flex-wrap: wrap; /* Allow wrapping for icons */
+}
+
+.difficulty-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.difficulty-tag.easy {
+  background-color: #28a745; /* Green for easy */
+}
+
+.difficulty-tag.medium {
+  background-color: #ffc107; /* Yellow for medium */
+}
+
+.difficulty-tag.hard {
+  background-color: #dc3545; /* Red for hard */
+}
+
+.question-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.question-icons {
+  display: flex;
+  gap: 20px; /* Adjust gap */
+  flex-wrap: wrap; /* Allow wrapping for icons */
+}
+
+.question-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.question-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.question-content p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+@media (max-width: 880px) {
+  .question-header h1 {
+    font-size: 20px;
+  }
+
+  .question-content p {
+    font-size: 12px;
+  }
+
+  .question-icons {
+    display: flex;
+    gap: 5px; /* Adjust gap */
+    flex-wrap: wrap; /* Allow wrapping for icons */
+  }
+  
+  .question-icons img {
+    width: 15px;
+    height: 15px;
+  }
+}

@@ -1,0 +1,444 @@
+
+.authContent {
+    height: 73px;
+    flex: 0.8208;
+  }
+  .authContentChild {
+    height: 73px;
+    width: 245px;
+    position: relative;
+    background-color: var(--color-white);
+    display: none;
+  }
+  .login {
+    text-decoration: none;
+    width: 117px;
+    position: relative;
+    font-weight: 600;
+    color: inherit;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  .authContent1,
+  .authContentParent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .authContent1 {
+    flex: 1;
+    background-color: var(--color-white);
+    justify-content: flex-end;
+    padding: 16px 36px 15px;
+    z-index: 1;
+    margin-left: -5px;
+  }
+  .authContentParent {
+    width: 505px;
+    justify-content: flex-start;
+    padding: 0 var(--padding-xl) 0 0;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .loginDivider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(4px);
+    background-color: var(--color-white);
+  }
+  .welcomeToJeecode {
+    width: 367px;
+    position: relative;
+    display: inline-block;
+    white-space: pre-wrap;
+    flex-shrink: 0;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .welcome {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    /* padding: 0 0 0 51px; */
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .createYourJeecode {
+    flex: 1;
+    position: relative;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
+    text-align: left;
+    display: inline-block;
+    max-width: 100%;
+    z-index: 2;
+  }
+  .googlebuttonChild,
+  .usernameField {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .usernameField {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0 var(--padding-9xs);
+  }
+  .googlebuttonChild {
+    height: 57.2px;
+    width: 322.8px;
+    position: relative;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkolivegreen);
+    display: none;
+  }
+  .continueWithGoogle,
+  .image56Icon {
+    align-self: stretch;
+    position: relative;
+    z-index: 1;
+  }
+  .image56Icon {
+    width: 36.5px;
+    height: 50px;
+    object-fit: cover;
+    min-height: 31px;
+    flex-shrink: 0;
+  }
+  .continueWithGoogle {
+    font-size: 15px;
+    line-height: 23.2px;
+    font-weight: 300;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
+    text-align: left;
+  }
+  .googleButton,
+  .googleLogin,
+  .googlebutton {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .googleButton {
+    width: 290.2px;
+    flex-direction: column;
+    padding: 2.4px 0 0;
+    flex-shrink: 0;
+  }
+  .googleLogin,
+  .googlebutton {
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .googlebutton {
+    width: 322px;
+    height: 40px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkolivegreen);
+    padding: 5px 5px 5px 45px;
+    gap: 25.1px;
+    z-index: 1;
+  }
+  .googleLogin {
+    padding: 0 0 0 var(--padding-9xs);
+  }
+  .or {
+    width: 59px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .separator {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-xl) 0 74px;
+  }
+  .jeecodeUsername,
+  .usernameValue {
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--color-black);
+    z-index: 1;
+  }
+  .jeecodeUsername {
+    width: 301px;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+  }
+  .usernameValue {
+    border: 0;
+    background-color: transparent;
+    align-self: stretch;
+    height: 67.2px;
+  }
+  .jeeCodeUsername {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3px;
+  }
+  .email {
+    flex: 1;
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
+    text-align: left;
+    z-index: 1;
+  }
+  .emailInput {
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .googleLoginChild {
+    border: 0;
+    background-color: transparent;
+    height: 67.2px;
+    flex: 1;
+    font-family: var(--font-poppins);
+    font-weight: 200;
+    font-size: var(--font-size-3xl-4);
+    color: var(--color-black);
+    max-width: 100%;
+    z-index: 1;
+  }
+  .googleLogin1,
+  .googleLoginParent,
+  .usernameInput {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .googleLogin1 {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 0 0 var(--padding-9xs);
+    box-sizing: border-box;
+  }
+  .googleLoginParent,
+  .usernameInput {
+    flex-direction: column;
+  }
+  .googleLoginParent {
+    width: 367px;
+    gap: 3px;
+  }
+  .usernameInput {
+    align-self: stretch;
+    gap: 16px;
+  }
+  .jeecodePassword {
+    width: 283px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
+    text-align: left;
+    display: inline-block;
+    z-index: 1;
+  }
+  .passwordInput {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkolivegreen);
+    z-index: 1;
+  }
+  .passwordField,
+  .passwordFieldWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .passwordField {
+    align-self: stretch;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--gap-mini);
+  }
+  .passwordFieldWrapper {
+    width: 371px;
+    height: 155.2px;
+    flex-direction: row;
+    padding: 0 var(--padding-9xs) 39px;
+    box-sizing: border-box;
+  }
+  .registerButtonChild {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+  }
+  .credentials,
+  .registerButton {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .registerButton {
+    width: 159px;
+    height: 53.5px;
+    flex-direction: row;
+    padding: 0 var(--padding-9xs);
+    box-sizing: border-box;
+  }
+  .credentials {
+    margin: 0;
+    flex: 1;
+    flex-direction: column;
+    gap: 15.8px;
+    min-width: 276px;
+    max-width: 100%;
+  }
+  .image57Icon {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .footer,
+  .signupForm {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .footer {
+    height: 480.2px;
+    width: 355.2px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3px 0 0;
+    box-sizing: border-box;
+    min-width: 355.2px;
+  }
+  .signupForm {
+    width: 780.2px;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 10px;
+  }
+  .loginDividerParent,
+  .signup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    color: var(--color-black);
+    font-family: var(--font-poppins);
+  }
+  .loginDividerParent {
+    align-self: stretch;
+    padding: 35px 35px 48.5px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 23px;
+    max-width: 100%;
+    font-size: 28px;
+    background: white;
+  }
+  .signup {
+    width: 100%;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 28px;
+  }
+  @media screen and (max-width: 750px) {
+    .welcomeToJeecode {
+      font-size: 24px;
+    }
+    .image57Icon {
+      align-self: stretch;
+      width: auto;
+    }
+    .footer {
+      flex: 1;
+    }
+    .signupForm {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .footer {
+      min-width: 100%;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .welcomeToJeecode {
+      font-size: 19px;
+    }
+    .welcome {
+      padding-left: var(--padding-xl);
+      box-sizing: border-box;
+    }
+    .continueWithGoogle,
+    .createYourJeecode {
+      font-size: var(--font-size-lg);
+    }
+    .continueWithGoogle {
+      line-height: 20px;
+    }
+    .googlebutton {
+      flex-wrap: wrap;
+    }
+    .email,
+    .jeecodeUsername,
+    .or {
+      font-size: var(--font-size-lg);
+    }
+    .usernameInput {
+      gap: var(--gap-mini);
+    }
+    .jeecodePassword {
+      font-size: var(--font-size-lg);
+    }
+    .credentials {
+      gap: 5px;
+    }
+    .loginDividerParent {
+      gap: 26px;
+      padding: var(--padding-xl) 27px var(--padding-2xl);
+      box-sizing: border-box;
+    }
+  }

@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    min-height: 100vh;
+    background-color: #E7EDF4;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    flex-direction: column; /* Allows vertical stacking of Navigation and AuthenticateContainer */
+    margin-top: 79px; 
+}
+
+.authenticateContainer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

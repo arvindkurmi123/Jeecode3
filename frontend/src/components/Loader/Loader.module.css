@@ -1,0 +1,33 @@
+.mainContainer {
+    display: flex;
+    height: 100%; /* This will ensure the loader component itself is centered */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    /* Center the images within this wrapper */
+}
+
+.fixedImage {
+    margin-right: 10px; /* Adds spacing between the two images */
+    /* No animation for the fixed image */
+}
+
+.animatedCapImage {
+    animation: bounce 1.5s ease-in-out infinite;
+    margin-left: -7px;
+    /* Adjust positioning or margins if needed */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-6px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}

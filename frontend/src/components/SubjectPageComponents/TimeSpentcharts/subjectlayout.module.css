@@ -1,0 +1,22 @@
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .dropdown {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .dropdown option {
+    padding: 10px;
+  }

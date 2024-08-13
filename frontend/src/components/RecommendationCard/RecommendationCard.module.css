@@ -1,0 +1,65 @@
+
+
+.container{
+    width: 275px;
+    height: 210px;
+    box-shadow: 5px 5px 17px 3px rgba(0, 0, 0, 0.5);
+    display: flexbox;
+}
+
+.subContainerOne{
+    padding: 20px 30px 10px 35px;
+    display: flex;
+}
+
+.subContainerOne .iconHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.iconHolder .icon{
+    font-size: x-large;
+    padding-top: 5px;
+}
+
+.subContainerOne .subheading{
+    font-size: larger;
+    font-weight:700;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    color: white;
+}
+.subContainerTwo{
+    padding: 0px 30px 5px 35px;
+    line-height: 22px;
+    font-size: 16px;
+    color: white;
+}
+.recommendedTopic{
+    font-size: 16px;
+    font-weight: bold;
+}
+.topicButton{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+}
+.topicButton:hover{
+    box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.9);
+}

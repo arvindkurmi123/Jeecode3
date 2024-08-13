@@ -1,0 +1,86 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bolder;
+    color:#C67336;
+}
+.subjectsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 10px;
+    padding: 30px;
+    gap: 30px;
+}
+
+
+
+.cardContainer{
+    margin: 20px 0px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* padding: 20px 40px; */
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+  }
+  
+  .card2 {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+.card3{
+    height: 96%;
+    width: 97%;
+    border-radius: 17px;
+    background-color: white;
+    display: flexbox;
+}
+
+
+.subContainerOne{
+    padding: 20px 30px 10px 35px;
+    display: flex;
+}
+
+.subContainerOne .iconHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.iconHolder .icon{
+    font-size: x-large;
+    padding-top: 5px;
+    color: white;
+}
+
+.subContainerTwo{
+    padding: 0px 30px 5px 35px;
+    line-height: 22px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}

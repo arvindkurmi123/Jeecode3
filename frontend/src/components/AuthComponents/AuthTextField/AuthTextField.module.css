@@ -1,0 +1,13 @@
+.usernameValue {
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--color-black);
+    z-index: 1;
+  }
+  .usernameValue {
+    border: 0;
+    background-color: transparent;
+    align-self: stretch;
+    height: 67.2px;
+  }

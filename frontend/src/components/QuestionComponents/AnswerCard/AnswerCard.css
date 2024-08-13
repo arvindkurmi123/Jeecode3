@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+.answer-card {
+  background-color: white;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  padding-bottom: 10px;
+  margin-bottom: 2rem;
+}
+
+.answer-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.answer-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.answer-option {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.answer-option input[type="radio"] {
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.answer-option label {
+  font-size: 18px;
+  font-weight: 300;
+}
+.timer {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.timer-icon {
+  margin-right: 5px;
+}
+
+.timer-text {
+  font-weight: bold;
+}
+
+@media (max-width: 880px) {
+  .answer-header h1 {
+    font-size: 24px;
+  }
+
+  .answer-option label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .answer-header h1 {
+    font-size: 20px;
+  }
+
+  .answer-option label {
+    font-size: 14px;
+  }
+}

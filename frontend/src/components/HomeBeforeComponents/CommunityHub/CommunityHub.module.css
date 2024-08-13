@@ -1,0 +1,97 @@
+.community_hub {
+    display: flex;
+    margin-top: 10%;
+    flex-direction: row;
+    width: 100%;
+}
+
+.community_hub_left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 609px;
+    margin-left: 100px;
+}
+
+.heading1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #C67336;
+    margin-bottom: 15px;
+}
+
+.heading2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    width: 496px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.content_community_hub {
+    font-family: 'Poppins';
+    font-style: normal;
+    width: 466px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 45px;
+    margin-top: 30px;
+}
+.getStarted_button{
+    width: 13px;
+    height: 15px;
+}
+.community_hub_right{
+    margin-left: 80px;
+}
+.basic{
+    background-color: #FFCF3C;
+    color: #000000;
+    border: none;
+    border-radius: 42PX;
+    padding: 10px 22px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+.Image1{
+    position: absolute;
+    width: 408px;
+    height: 408px;
+}
+.Image2{
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    left: 200px;
+    width: 299px;
+    height: 299px;
+}
+.Vector{
+    position: absolute;
+    width: 85px;
+    height: 69.8px;
+    left: 370px;
+    top: 50px;
+}
+.Images_right_side{
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+@media (max-width: 1265px) {
+    .community_hub{
+        flex-direction: column;
+        align-items: center;
+    }
+    .community_hub_right{
+        margin-top: 10%;
+    }
+}

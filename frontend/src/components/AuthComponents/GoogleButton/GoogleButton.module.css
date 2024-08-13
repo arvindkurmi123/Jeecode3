@@ -1,0 +1,70 @@
+.googleButton,
+.googlebutton {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.googleButton {
+  width: 290.2px;
+  flex-direction: column;
+  padding: 2.4px 0 0;
+  flex-shrink: 0;
+}
+.googlebutton {
+  flex-direction: row;
+  max-width: 100%;
+}
+.googlebutton {
+  width: 322px;
+  height: 40px;
+  background-color: var(--color-white);
+  border: 1px solid darkolivegreen;
+  padding: 5px 5px 5px 45px;
+  gap: 25.1px;
+  z-index: 1;
+  margin-bottom: 0.7rem;
+}
+.googlebuttonChild {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.googlebuttonChild {
+    height: 57.2px;
+    width: 322.8px;
+    position: relative;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-darkolivegreen);
+    display: none;
+  }
+  .continueWithGoogle,
+  .image56Icon {
+    align-self: stretch;
+    position: relative;
+    z-index: 1;
+  }
+  .continueWithGoogle {
+    font-size: 15px;
+    line-height: 23.2px;
+    font-weight: 300;
+    font-family: var(--font-poppins);
+    color: var(--color-black);
+    text-align: left;
+  }
+  .continueWithGoogle,
+    .continueWithGoogle {
+      line-height: 20px;
+    }
+
+    .image56Icon {
+        align-self: stretch;
+        position: relative;
+        z-index: 1;
+      }
+      .image56Icon {
+        width: 36.5px;
+        max-height: 100%;
+        object-fit: cover;
+        min-height: 31px;
+        flex-shrink: 0;
+      }

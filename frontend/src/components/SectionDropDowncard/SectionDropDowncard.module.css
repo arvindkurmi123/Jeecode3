@@ -1,0 +1,155 @@
+.sectionCard {
+  margin-bottom: 20px;
+  width: 95%;
+  /* border: 1px solid black; */
+  padding: 0px 10px;
+}
+
+.topicContainer {
+  margin-bottom: 2px;
+  width: 100%;
+  
+}
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 25px;
+  width: 25px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  border: 1px solid #d0d0d0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+}
+
+.checkbox:checked {
+  background-color: #0C7FDA;
+}
+
+.checkbox::after {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.subtopics{
+margin-left: 15px;
+
+font-size: 20px;
+font-weight: 500;
+}
+.listcompo{
+display: flex;
+/* justify-content: center; */
+/* margin-right: 0px; */
+
+}
+.checkboxprop{
+align-self: flex-end;
+margin-left: auto;
+margin-right: 15px;
+}
+.checkbox:checked::after {
+  display: block;
+}
+.checkbox2 {
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+height: 25px;
+width: 25px;
+background-color: #f0f0f0;
+border-radius: 5px;
+border: 1px solid #d0d0d0;
+cursor: pointer;
+position: relative;
+display: inline-block;
+vertical-align: middle;
+right: 0;
+outline: none;
+}
+
+.checkbox2:checked {
+background-color: #0C7FDA;
+}
+
+.checkbox2::after {
+content: '';
+position: absolute;
+display: none;
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+transform: rotate(45deg);
+}
+
+.checkbox2:checked::after {
+display: block;
+}
+.topicButton {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  background-color: #c7c5c5;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  text-align: left;
+  font-size: 17px;
+  transition: background-color 0.3s;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.topicsname{
+  margin-left: 15px;
+}
+.topicButton:hover ,.topicButtonActive {
+  background-color: #e0e0e0;
+}
+
+.dropdownMenu {
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+}
+.dropdownIcon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.dropdownIconOpen {
+  transform: rotate(180deg);
+}
+.dropdownItem {
+  padding: 15px 0;
+  font-size: 15px;
+  transition: background-color 0.3s;
+}
+.subtopicsList{
+  margin-left: 30px;
+  margin-right: 10px;
+  /* border: 1px solid black; */
+}
+.subtopicsList li{
+  font-size: 20px;
+  box-shadow: 0px 0px 2px rgb(0, 0, 0, 0.2);
+  margin: 2px 0px;
+  border-radius: 10px;
+}
+.dropdownItem:hover {
+  box-shadow: 0px 0px 8px rgb(0, 0, 0, 0.9);
+}

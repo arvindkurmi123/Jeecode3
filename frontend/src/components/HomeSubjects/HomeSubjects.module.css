@@ -1,0 +1,82 @@
+.homeSubjectContainer {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .homeSubjectContainer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .homeSubjectSections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 35px;
+    gap: 15px;
+  }
+  
+  .homeSubjectSectionCard {
+    width: 100%;
+    min-height: 70px;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  
+  .homeSubjectSectionCardIcon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: -50px;
+    margin-right: 15px;
+    font-size: 40px;
+    background-color: white;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .homeSubjectSectionCardContent {
+    flex-grow: 1;
+  }
+  
+  .homeSubjectSectionCardContent h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .homeSubjectSectionCardContent p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .homeSubjectSectionCardCompletion {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+
+  .titleHolder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px;
+  }
+  .homeSubjectTitle{
+    font-size: 25px;
+    font-weight: bolder;
+  }

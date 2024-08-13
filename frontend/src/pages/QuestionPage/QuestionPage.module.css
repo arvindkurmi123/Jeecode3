@@ -1,0 +1,87 @@
+/* QuestionPage.module.css */
+
+/* Default horizontal layout */
+body {
+    background-color: white; /* Set entire screen background to white */
+  }
+  
+  .layoutContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .topDiv {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    height: 13vh; /* Adjust the height as needed */
+  }
+  
+  .bottomDiv {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    height: 13vh; /* Adjust the height as needed */
+  }
+  
+  .contentContainer {
+    flex: 1;
+    display: flex;
+    position: relative;
+    overflow: hidden; /* Ensure overflow is hidden to maintain fixed height */
+  }
+  
+  .questions {
+    height: calc(70vh); /* Set fixed height for the main content area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: white; /* Set background to white */
+    min-width: 400px; /* Adjust based on the width of the QuestionCard */
+    margin-left: 3rem;
+  }
+  
+  .answers {
+    height: calc(70vh); /* Set fixed height for the main content area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: white; /* Set background to white */
+    min-width: 400px; /* Ensure answers section also has a minimum width */
+    margin-left: 3rem;
+  }
+  
+  .answersContent {
+    padding: 10px; /* Add padding for better spacing */
+  }
+  
+  .divider {
+    width: 3px;
+    background-color: #d3d3d3; /* Light gray color */
+    cursor: col-resize;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .divider:hover {
+    background-color: blueviolet;
+    width: 4px;
+  }
+  
+  .divider:before {
+    content: '';
+    width: 1px;
+    height: 50%;
+    background-color: #999; /* Darker gray color for the line */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 880px) {
+    .contentContainer{
+        display: block;
+        position: relative;
+        overflow-y: scroll;
+    }
+  }
+  

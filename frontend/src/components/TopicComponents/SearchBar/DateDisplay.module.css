@@ -1,0 +1,9 @@
+.dateContainer {
+    font-size: 16px;
+    color: #555555;
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+  }

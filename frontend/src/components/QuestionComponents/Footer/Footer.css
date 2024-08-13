@@ -1,0 +1,132 @@
+/* Footer.css */
+.container {
+    padding: 20px;
+    border-top: 2px solid #d3d3d3; /* Light color line divider */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    height: 9rem;
+  }
+.footer-container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem; /* Space between elements */
+  }
+  
+  .footer-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    gap: 8rem; /* Space between elements */
+  }
+  
+  .footer-right {
+    display: flex;
+    align-items: center;
+    margin-left: 20rem; /* Space between elements */
+  }
+  
+  .footer-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .go-back {
+    background-color: orange;
+    color: white;
+    border: 1px solid #FDB601;
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+  
+  .check-answer {
+    background-color: #ea860c;
+    color: white;
+  }
+  
+  .next-question {
+    background-color: #0163FD;
+    color: white;
+  }
+  
+  .footer-link {
+    color: #0163FD;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .footer-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0163FD;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .footer-checkbox input[type="checkbox"] {
+    cursor: pointer;
+  }
+  
+  .footer-checkbox label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 880px) {
+    .container {
+        padding: 20px;
+        border-top: 2px solid #d3d3d3; /* Light color line divider */
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        height: 9rem;
+      }
+      .footer-left {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem; /* Space between elements */
+      }
+      
+      .footer-buttons {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+        margin-right: 3rem;
+        gap: 1rem; /* Space between elements */
+      }
+      
+      .footer-right {
+        display: block;
+        align-items: center;
+        margin-left: 2rem; /* Space between elements */
+      }
+      
+      .footer-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-size: 9px;
+        font-weight: 700;
+      }
+  }

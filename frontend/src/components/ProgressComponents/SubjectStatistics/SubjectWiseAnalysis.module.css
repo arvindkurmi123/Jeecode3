@@ -1,0 +1,39 @@
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+
+}
+
+.mainContainer .subContainer{
+    width: 100%;
+}
+.extraInfo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* border: 1px solid black; */
+}
+
+.topicButton{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+    width: 275px;
+}
+.topicButton:hover{
+    box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.9);
+}
+.sectionContainer{
+    width: 100%;
+}

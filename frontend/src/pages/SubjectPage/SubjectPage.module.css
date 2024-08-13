@@ -1,0 +1,148 @@
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+  }
+  .userWelcome{
+      margin: 30px 0px;
+    }
+    .welcomeMessage {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+  
+    .slogan {
+      font-size: 1em;
+      color: #0C7FDA;
+    }
+   .subjectpagebox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
+  .container{
+  
+    width: 275px;
+    height: 210px;
+    /* box-shadow: 5px 5px 17px 3px rgba(0, 0, 0, 0.5); */
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color:#F5EEEE;
+    display: flex;
+    /* border-radius: 10px; */
+    /* flex-direction: row; */
+  }
+  .container2{
+    background-color: #FD017A;
+  }
+  img{
+    width: auto;
+    height: auto;
+  }
+  .headerimg{
+    position:absolute;
+    /* border-radius: 10px 10px 0px 0px; */
+    width: 275px;
+    /* height: 50px; */
+  }
+  .lowerimg{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    margin-top: 63px;
+    margin-left: 15px;
+  }
+  .subject_name{
+    margin-top: 106px;
+    margin-left: 15px;
+    font-size: 32px;
+  }
+  .header_bar{
+    display: flex;
+  }
+  .cardContainer{
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-content: center;
+    justify-content: center;
+    /* margin-right: 40px; */
+  }
+  .subject_box{
+    display: flex;
+    flex-wrap: wrap;
+  
+    justify-content: space-between;
+    margin-right: 73px;
+    margin-left: 59px;
+  }
+  .custombullets {
+    list-style-type: disc; /* Default bullet style */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    font-size: 19px;
+    display: flex;
+    gap: 93px;
+  }
+  .charts{
+    margin-top: 50px;
+  }
+  .timespentcharts{
+    display: flex;
+    gap: 20px;
+    align-self: center;
+    justify-content: center;
+    margin-top: 40px;
+    background-color:#FFFAFA;
+    width: 1026px;
+  
+  }
+  .linechart{
+    margin-top: 35px;
+  }
+  .timespentpersubject{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 50px;
+    align-self: center;
+    margin-top: 40px;
+  }
+  .attempted{
+    margin-top: 100px;
+    margin-left: 15px;
+  }
+  .questionattempted{
+    /* margin-left: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 120px;
+    /* box-shadow: 5px 5px 7px 3px rgba(0, 0, 0, 0.5); */
+    /* box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.4); */
+    background-color:#FFFAFA;
+      width: 1026px;
+      height: 252px;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+    /* margin-right: 50px; */
+  }
+  .box{
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+  
+  .subjectStatistics{
+    background-color: white;
+    border-radius: 5px;
+    width: 95%;
+    padding: 20px;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 1400px;
+    margin: 10px 0px;
+  }

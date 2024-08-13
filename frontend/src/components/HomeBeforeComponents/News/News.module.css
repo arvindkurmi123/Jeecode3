@@ -1,0 +1,16 @@
+.news{
+    margin-left: 10%;
+  }
+  .news img{
+    width: 92%;
+    height: 10%;
+  }
+  /* @media (max-width: 900px) {
+    .news{
+        align-content: center;
+    }
+    .news img{
+        width: 617px;
+        height: 284px;
+      }
+} */

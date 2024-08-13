@@ -1,0 +1,80 @@
+.topicItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #657586;
+    gap: 20px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin: 30px auto;
+    box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+.topicItem:hover{
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+    border: 0.1px solid rgb(134, 134, 134);
+}
+
+.topicName {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1;
+    width: 20%;
+    /* border: 1px solid black; */
+}
+
+.progressContainer {
+    display: flex;
+    align-items: center;
+    flex: 2;
+    margin-left: 20px;
+    width: 40%;
+    /* border: 1px solid black; */
+
+}
+
+.progressBar {
+    width: 60%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+    /* border: 1px solid black; */
+
+}
+
+.progressFill {
+    height: 100%;
+    background-color: #f2a900;
+    border-radius: 5px;
+}
+
+.progressPercent {
+    color: white;
+    font-size: 14px;
+    /* border: 1px solid black; */
+    width: 10%;
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.topicButton {
+    background-color: #f2a900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+    width: 20%;
+    /* border: 1px solid black; */
+
+}
+
+.topicButton:hover {
+    background-color: #e08d00;
+}
