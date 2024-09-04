@@ -8,6 +8,8 @@ import { IoLogOut } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import styles from "./Sidebar.module.css";
+import Logo from '/images/logo2.svg';
+
 const Sidebar = ({isOpen, toggle,logout}) => {
 
     const {user} = useSelector((state)=> state.auth);
@@ -50,8 +52,15 @@ const Sidebar = ({isOpen, toggle,logout}) => {
 
                 {/* logo  */}
                <div className={styles.top_section}>
-                   <div style={{display: isOpen ? "inline" : "none"}} className={styles.logo}>Logo</div>
-                   <div style={{marginLeft: isOpen ? "130px" : "0px", transition:"0.7s"}} className={styles.bars}>
+                   <div style={{display: isOpen ? "inline" : "none"}} className={styles.logo}><img
+                            src={Logo}
+                            alt="logo"
+                            // className={styles.loaderImage}
+                            width={50}
+                            height={10}
+                        />
+                    </div>
+                   <div style={{marginLeft: isOpen ? "10px" : "0px", transition:"0.7s"}} className={styles.bars}>
                        <FaBars onClick={toggle}/>
                    </div>
                </div>

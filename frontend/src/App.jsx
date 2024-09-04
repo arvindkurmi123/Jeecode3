@@ -35,8 +35,8 @@ function App() {
           <Route path="subject" element={<SubjectPage />} />
           <Route path="/chapters/:chapterName" element={<TopicPage />} />
           
-          <Route path="*" element={<Navigate to="/" />} />
           <Route path="/section/:subjectName" element={<SectionPage />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Route>
         <Route path="/Kinematics/:questionId" element={<QuestionPage />} />
         <Route
