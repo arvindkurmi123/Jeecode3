@@ -10,21 +10,21 @@ const HomeAfter = () => {
 const { user } = useSelector((state) => state.auth);
 
   return (
-    <div>
+    <div className={styles.mainContainer}>
         <div className={styles.userWelcome}>
             <div className={styles.welcomeMessage}>Welcome back, <span style={{color:"#0C7FDA"}}>{user.name}!</span></div>
             <p className={styles.slogan}>Unleash Your Potential with JEECode</p>
         </div>
-        <h2>Recommended for you</h2>
+        <h2>Recommended Topics for you</h2>
         <div className={styles.cardContainer}>
-          <RecommendationCard color="#0163FD" icon={TbMathSymbols} subject={"Maths"} />
-          <RecommendationCard color="#FD0101" icon={TbMathSymbols} subject={"Physics"}/>
-          <RecommendationCard color="#FD9801" icon={TbMathSymbols} subject={"Chemistry"}/>
+          <RecommendationCard color="#0163FD" icon={TbMathSymbols} subject={"Maths"}  recommendedText={"Default"} />
+          <RecommendationCard color="#FD0101" icon={TbMathSymbols} subject={"Physics"} recommendedText={"Default"}/>
+          <RecommendationCard color="#FD9801" icon={TbMathSymbols} subject={"Chemistry"} recommendedText={"Default"}/>
         </div>
         <br /><br />
         <h2>Recent Activities</h2>
         <div className={styles.activityContainer}>
-          <RecentProgress/>
+          <RecentProgress user={user}/>
         </div>
         <h2>Sections of the Subjects</h2>
         <div className={styles.sectionContainer}>
@@ -33,7 +33,7 @@ const { user } = useSelector((state) => state.auth);
               subject="Mathematics"
               sections={[
                 { title: 'Algebra', description: 'Information about Algebra', completion: 78 },
-                { title: 'Differentiation', description: 'Information about Differentiation', completion: 88 },
+                { title: 'Calculus', description: 'Information about Calculus', completion: 88 },
                 { title: 'Integration', description: 'Information about Integration', completion: 79 },
                 { title: 'Statistics', description: 'Information about Statistics', completion: 60 },
               ]}
@@ -43,10 +43,10 @@ const { user } = useSelector((state) => state.auth);
             <HomeSubjects
               subject="Chemistry"
               sections={[
-                { title: 'Algebra', description: 'Information about Algebra', completion: 78 },
-                { title: 'Differentiation', description: 'Information about Differentiation', completion: 88 },
-                { title: 'Integration', description: 'Information about Integration', completion: 79 },
-                { title: 'Statistics', description: 'Information about Statistics', completion: 60 },
+                { title: 'Organic Chemistry', description: 'Information about Algebra', completion: 78 },
+                { title: 'Inorganic Chemistry', description: 'Information about Differentiation', completion: 88 },
+                { title: 'Physical Chemistry', description: 'Information about Integration', completion: 79 },
+                { title: 'Biomedical Chemistry', description: 'Information about Statistics', completion: 60 },
               ]}
             />
           </div>
@@ -54,10 +54,10 @@ const { user } = useSelector((state) => state.auth);
             <HomeSubjects
               subject="Physics"
               sections={[
-                { title: 'Algebra', description: 'Information about Algebra', completion: 78 },
-                { title: 'Differentiation', description: 'Information about Differentiation', completion: 88 },
-                { title: 'Integration', description: 'Information about Integration', completion: 79 },
-                { title: 'Statistics', description: 'Information about Statistics', completion: 60 },
+                { title: 'Mechanics', description: 'Information about Mechanics', completion: 78 },
+                { title: 'Thermal Physics', description: 'Information about Thermal Physics', completion: 88 },
+                { title: 'Oscillation and wave', description: 'Information about Oscillation and wave', completion: 79 },
+                { title: 'Electromegnatism', description: 'Information about Electromegnatism', completion: 60 },
               ]}
             />
           </div>

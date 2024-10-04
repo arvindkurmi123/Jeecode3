@@ -1,4 +1,5 @@
 const QuestionModel = require('../models/question-model');
+const submissionModel = require('../models/submission-model');
 const SubmissionModel = require('../models/submission-model');
 class QuestionService {
     async findTopicsByChapter(chapter) {
@@ -47,9 +48,20 @@ class QuestionService {
     async getQuestionsByChapter(chapter) {
         return QuestionModel.find({ chapter }).exec();
     }
+    async getQuestionsByTopic(topic){
+        return QuestionModel.find({ topic }).exec();
+    }
+    async getQuestionBySubmissionId(submissionId){
+        const submission = await submissionModel.findById(submissionId);
+        if(!submission){
+            return null;
+        }
+        const question = await QuestionModel.findById(submission.questionId);
+        return question;
+    }
     async getSubmissionsByUserAndQuestions(userId, questionIds) {
         return SubmissionModel.find({ userId, questionId: { $in: questionIds }, doneStatus: true }).exec();
-      }
+    }
 }
 
 module.exports = new QuestionService();

@@ -27,6 +27,15 @@ export const nextQuestion = (data) => api.post('/api/next-question',data);
 export const checkAnswer = (data) => api.post('/api/check-answer',data);
 export const findUserInfo = (data) => api.post('/api/find-user-info', data);
 export const findSubmissionInfo = (data) => api.post('/api/find-submission-info', data);
+export const findRecentActivity = (data)=> api.post('/api/find-recent-activity',data);
+// export const uploadUserProfilePhoto = (data) => api.post('/api/uploadUserPhoto',data);
+export const uploadUserProfilePhoto = (data) => {
+    return api.post('/api/uploadUserPhoto', data, {
+        headers: {
+            'Content-Type': 'multipart/form-data', // Specify multipart form data for file uploads
+        },
+    });
+};
 
 api.interceptors.response.use(
     (config) => {

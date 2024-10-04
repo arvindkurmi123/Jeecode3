@@ -1,12 +1,19 @@
 import React from 'react';
 import styles from './HomeSubjects.module.css'
 import { GiBookCover } from "react-icons/gi";
+import { useNavigate } from 'react-router-dom';
+
 const HomeSubjects = ({ subject, sections }) => {
+  const navigate = useNavigate();
+  const handleSubjectClick = ()=>{
+    console.log('subject clicked',subject,sections);
+    navigate(`/section/${subject}`);
+  }
   return (
     <div className={styles.homeSubjectContainer}>
       <div className={styles.titleHolder}>
         <div className={styles.homeSubjectTitle}>{subject}</div>
-        <div>Explore</div>
+        <div className={styles.explore} onClick={handleSubjectClick}>Explore</div>
       </div>
       <hr style={{height:2,backgroundColor:'black'}} />
       <br />

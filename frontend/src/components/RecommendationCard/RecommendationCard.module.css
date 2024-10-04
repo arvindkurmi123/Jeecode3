@@ -3,10 +3,12 @@
 .container{
     width: 275px;
     height: 210px;
-    box-shadow: 5px 5px 17px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
     display: flexbox;
 }
-
+.container:hover{
+    box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.6);
+}
 .subContainerOne{
     padding: 20px 30px 10px 35px;
     display: flex;

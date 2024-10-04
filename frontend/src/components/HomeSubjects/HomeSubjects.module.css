@@ -80,3 +80,12 @@
     font-size: 25px;
     font-weight: bolder;
   }
+
+  .explore{
+    color: rgb(36, 36, 255);
+  }
+
+  .explore:hover{
+    color: rgb(0, 0, 255);
+    cursor: pointer;
+  }

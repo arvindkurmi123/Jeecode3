@@ -80,7 +80,26 @@ const userSchema = new Schema({
     mathematics: {
         type: subjectSchema,
         default: {}
-    }
+    },
+    bio: {
+        type: String,
+        required: true,
+        default: "I Love JEECODE"
+    },
+    class: {
+        type: String,
+        required: true,
+        default: "11th"
+    },
+    school: {
+        type: String,
+        required: true,
+        default: "NA"
+    },
+    img: { type: String, 
+        required: true,
+        default: '/images/userIcon1.jpeg' 
+    }, // Field to store the profile photo path
 }, {
     timestamps: true,
     toJSON: { getters: true }

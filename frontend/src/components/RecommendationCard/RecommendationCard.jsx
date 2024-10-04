@@ -31,7 +31,7 @@ function RecommendationCard(props) {
               Start your journey <span style={{fontSize:"20px", marginLeft:"10px", paddingTop:"5px"}}><FaArrowCircleRight/></span>
             </button>
           </div>
-          :"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores ipsam."}
+          :"Topic Information"}
         </div>
       </div>
     </div>

@@ -29,8 +29,6 @@ app.use(bodyParser.json());
 app.use(express.json({ limit: '8mb' })); // size of file
 app.use(router);
 
-// Middleware to parse JSON bodies
-app.use(express.json());
 
 // Define a basic route
 app.get('/', (req, res) => {

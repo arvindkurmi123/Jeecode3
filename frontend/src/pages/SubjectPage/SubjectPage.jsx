@@ -70,23 +70,6 @@ const SubjectPage = () => {
       <div className={styles.welcomeMessage}>Welcome back, <span style={{ color: "#0C7FDA" }}>{user.name}!</span></div>
         <p className={styles.slogan}>Unleash Your Potential with JEECode</p>
       </div>
-      {/* <div className={styles.cardContainer}>
-          <RecommendationCard color="#0163FD" icon={TbMathSymbols}/>
-          <RecommendationCard color="#FD0101" icon={TbMathSymbols}/>
-          <RecommendationCard color="#FD9801" icon={TbMathSymbols}/>
-      </div>
-      <div className={styles.questionattempted}>
-        <Donutchart subject="Physics"
-          section={{ color1: '#9BDFC4', color2: '#62B2FD' }} />
-        <Donutchart subject="Chemistry"
-          section={{ color1: '#9BDFC4', color2: '#62B2FD' }} />
-        <Donutchart subject="Mathematics"
-          section={{ color1: '#9BDFC4', color2: '#62B2FD' }} />
-      </div>
-      <div className={styles.timespentcharts}>
-      <SubjectLayout setSelectedSubject={setSelectedSubject}  />
-      <Linecharts subject={selectedSubject} className={styles.linechart}/>
-      </div> */}
       <div className={styles.subjectStatistics}>
         <SubjectStatistics 
           userInfo={userInfo} 
